@@ -23,6 +23,6 @@
    Open [http://localhost:3000](http://localhost:3000) in your browser.  
 
 OR 
-## VIST 👉  
+## VIST 👉  https://my-portfolio-alpha-pink-18.vercel.app/
 
  
