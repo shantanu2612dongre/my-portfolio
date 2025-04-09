@@ -1,92 +1,82 @@
+import React from "react";
 
-import { Github, ExternalLink } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardFooter } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
-
-const projects = [
-  {
-    title: "Cloud Kitehcen Website",
-    description:
-      "A full-featured cloud kithecn web app with product listings, odrder cart, and secure checkout functionality.",
-    image: "/placeholder.svg",
-    tags: ["HTML/CSS", "Javascript","Django", " PostgreSQL", "Stripe"],
-    githubUrl: "https://github.com/shantanu2612dongre/django_Cloud_kitechn_project.git",
-
-    liveUrl: "#",
-  },
-  {
-    title: "Task Management App(In development)",
-    description:
-      "A productivity application for managing tasks, projects, and deadlines with team collaboration features with AI features.",
-    image: "/placeholder.svg",
-    tags: ["TypeScript", "React", "Node.js", "Tailwind CSS"],
-     githubUrl: "#",
-     liveUrl: "#",
-  },
-  {
-    title: "Ezbus",
-    description:
-      "Real-time ticket booking application with interactive maps and historical data visualization.",
-    image: "/placeholder.svg",
-    tags: ["JavaScript", "React", "API Integration", "Chart.js"],
-    githubUrl: "#",
-    liveUrl: "#",
-  },
-];
+const projectGroups = {
+  "Featured Projects": [
+    {
+      title: "FocusFlow",
+      description: "A productivity timer app with calendar integration, sticky notes, and session analytics. Built using React, Supabase, and Tailwind.",
+      image: "/projects/focusflow.png",
+      link: "https://focusflow.app",
+    },
+  ],
+  "Full-Stack Apps": [
+    {
+      title: "KitchenCloud",
+      description: "A full-stack cloud kitchen app with cart, filtering, and admin panel. Powered by Django & React.",
+      image: "/projects/kitchencloud.png",
+      link: "https://kitchencloud.live",
+    },
+    {
+      title: "Resume Matcher AI",
+      description: "AI tool that parses resumes & JDs to generate match scores and tailored summaries using OpenAI.",
+      image: "/projects/resumematcher.png",
+      link: "https://resumematcher.app",
+    },
+  ],
+  "Product & Internal Tools": [
+    {
+      title: "Portfolio",
+      description: "Built my own portfolio showcasing my knowledge skillset and projects , Built using React, Tailwind CSS, and Framer Motion. Includes animations, smooth scrolling, and responsive design.and Tailwind.",
+      image: "/projects/portfolio.png",
+      link: "#",
+    },
+  ],
+};
 
 const ProjectsSection = () => {
   return (
-    <section id="projects" className="section-padding">
+    <section id="projects" className="py-20 px-4 bg-background text-foreground">
+  <div className="max-w-6xl mx-auto"></div>
       <div className="section-container">
-        <div className="text-center mb-16 animate-on-scroll">
+        <div className="text-center mb-12 animate-on-scroll">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">My Projects</h2>
-          <div className="w-16 h-1 bg-primary mx-auto mb-6"></div>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            Here are some of my recent projects. Each one presented unique
-            challenges and opportunities to learn and grow.
-          </p>
+          <p className="text-muted-foreground">From SaaS products to internal tools — blending product thinking and full-stack skills</p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, index) => (
-            <Card 
-              key={index} 
-              className="overflow-hidden border-border/50 animate-on-scroll project-card bg-card/80 backdrop-blur-sm"
-            >
-              <div className="aspect-video bg-muted relative overflow-hidden">
-                <img
-                  src={project.image}
-                  alt={project.title}
-                  className="object-cover w-full h-full transition-transform hover:scale-105 duration-300"
-                />
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-3">{project.title}</h3>
-                <p className="text-muted-foreground mb-4">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mb-4">
-                  {project.tags.map((tag, i) => (
-                    <Badge key={i} variant="secondary" className="rounded-full">
-                      {tag}
-                    </Badge>
-                  ))}
-                </div>
-              </CardContent>
-              <CardFooter className="px-6 pb-6 pt-0 flex gap-3">
-                <Button variant="outline" size="sm" asChild className="rounded-full">
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                    <Github className="h-4 w-4 mr-2" /> Code
-                  </a>
-                </Button>
-                {/* <Button size="sm" asChild className="rounded-full">
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                    <ExternalLink className="h-4 w-4 mr-2" /> Live Demo
-                  </a>
-                </Button> */}
-              </CardFooter>
-            </Card>
-          ))}
-        </div>
+        {Object.entries(projectGroups).map(([groupTitle, projects], i) => (
+          <div key={i} className="mb-16 animate-on-scroll">
+            <h3 className="text-2xl font-semibold mb-6">{groupTitle}</h3>
+
+            <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+              {projects.map((proj, j) => (
+                <a
+                  key={j}
+                  href={proj.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="relative group overflow-hidden rounded-xl shadow-lg cursor-pointer transform hover:scale-[1.02] transition"
+                >
+                  {/* Image */}
+                  <img
+                    src={proj.image}
+                    alt={proj.title}
+                    className="w-full h-52 object-cover"
+                  />
+
+                  {/* Title */}
+                  <div className="bg-background p-3 text-center">
+                    <h3 className="text-lg font-semibold">{proj.title}</h3>
+                  </div>
+
+                  {/* Hover Description */}
+                  <div className="absolute inset-0 bg-black/80 text-white flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300 p-4 text-sm text-center">
+                    {proj.description}
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        ))}
       </div>
     </section>
   );

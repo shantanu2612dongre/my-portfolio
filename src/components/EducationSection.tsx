@@ -8,13 +8,13 @@ const education = [
     school: "Manipal University",
     year: "2024 - 2026",
     description:
-      "Specialization in Business Administration with a focus on Product Management, Data Analytics, and Distributed Systems.",
+      "Pursuing online , specialization in Business Administration with a focus on Product Management, Data Analytics, and Distributed Systems.",
   },
   
   {
     degree: "Bachelor of Science in Computer Science",
     school: "State University",
-    year: "2015 - 2019",
+    year: "2017 - 2019",
     description:
       "Core computer science curriculum with electives in information and technology.",
   },

@@ -8,7 +8,16 @@ const experiences = [
     company: "Makepositive Software Solutions Ltd",
     duration: "Jan 2022 - Nov 2023",
     description: [
-      "Drove product quality and delivery optimization through disciplined Agile Scrum implementation, resulting in 60% improvement in system efficiency. Executed comprehensive end-to-end testing protocols for Salesforce Sales, Service, and Marketing Clouds to ensure optimal platform performance and user experience. Implemented JIRA-based defect management system featuring automated bug reporting, reducing critical issue resolution time by 30% through strategic prioritization. Conducted rigorous API validation using Postman and Salesforce Workbench to maintain data integrity and system integration reliability."
+      "Led Agile Scrum ceremonies (daily standups, sprint planning, retrospectives) to drive cross-functional alignment, feature prioritization, and timely product delivery",
+      "Collaborated with Product Owners and stakeholders to define user stories, acceptance criteria, and MVP scopes, aligning development with business goals.",
+      "	Conducted thorough end-to-end testing, functional testing, and UAT for Salesforce Sales, Service, and Marketing Clouds, ensuring seamless user experience and compliance with business requirements",
+      "Implemented and managed a JIRA-based defect tracking system, incorporating automated bug reporting, status tracking, and resolution workflows",
+      "Reduced average issue resolution time by 30% through strategic defect triaging, risk-based prioritization, and coordination with developers and business teams",
+      "Designed and executed detailed test plans, test cases, and regression suites to validate product stability across multiple releases",
+      "Performed API testing and data validation using Postman, Salesforce Workbench, and Swagger, ensuring system integration integrity and backend reliability.",
+      "Championed quality assurance best practices, including continuous feedback loops, release checklists, and root-cause analysis to drive continuous improvement.",
+      "Partnered with UI/UX teams to review wireframes and prototypes, identifying usability issues early in the product lifecyclee.",
+      "Contributed to backlog grooming and feature roadmap planning, ensuring prioritization aligned with business impact and user needs."
     ],
   },
   {

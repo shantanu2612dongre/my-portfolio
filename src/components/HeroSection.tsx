@@ -33,7 +33,7 @@ const HeroSection = () => {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.6 }}
           >
-            I'm a full-stack developer specializing in building exceptional digital experiences.
+            A Full-Stack Developer with a Product Mindset.
             Currently, I'm focused on creating accessible, human-centered products.
           </motion.p>
           
