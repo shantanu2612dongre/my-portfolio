@@ -33,7 +33,7 @@ const HeroSection = () => {
         </motion.h1>
 
         <motion.p
-          className="text-base md:text-lg text-white/80 max-w-2xl mx-auto mt-6 mb-10"
+          className="text-base md:text-lg text-white/90 max-w-2xl mx-auto mt-6 mb-10"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
@@ -48,15 +48,28 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.8 }}
         >
-          <Button asChild size="lg" className="rounded-md">
-            <a href="#projects">
-              View My Projects <ArrowRight className="ml-2 h-4 w-4" />
-            </a>
-          </Button>
+         <Button
+  asChild
+  size="lg"
+  className="rounded-md bg-gradient-to-r from-purple-600 to-pink-500 hover:from-pink-500 hover:to-purple-600 transition-all duration-300 text-white shadow-md hover:shadow-lg"
+>
+  <a href="#projects" className="flex items-center gap-2">
+    View My Projects
+    <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+  </a>
+</Button>
 
-          <Button variant="outline" size="lg" asChild className="rounded-md border-white/40 text-white hover:bg-white/10">
-            <a href="#contact">Contact Me</a>
-          </Button>
+<Button
+  variant="outline"
+  size="lg"
+  asChild
+  className="rounded-md border-white/40 text-white hover:bg-white/10 hover:border-white transition-all duration-300 shadow-sm hover:shadow-md backdrop-blur-md group"
+>
+  <a href="#contact" className="flex items-center gap-2">
+    Contact Me
+    <ArrowRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1" />
+  </a>
+</Button>
         </motion.div>
       </div>
     </section>
