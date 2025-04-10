@@ -34,61 +34,39 @@ const experiences = [
 
 const ExperienceSection = () => {
   return (
-    <section id="experience" className="section-padding">
-      <div className="section-container">
-        <div className="text-center mb-12 animate-on-scroll">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Work Experience</h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            My professional journey and the impactful contributions I've made along the way.
-          </p>
-        </div>
-
-        <div className="max-w-3xl mx-auto">
-          <div className="relative">
-            {/* Timeline line */}
-            <div className="absolute left-8 top-3 bottom-0 w-px bg-border hidden md:block"></div>
-
-            <div className="space-y-10">
-              {experiences.map((experience, index) => (
-                <div key={index} className="animate-on-scroll">
-                  <Card className="border-border/50 relative md:ml-14">
-                    {/* Timeline dot for desktop */}
-                    <div className="absolute left-0 top-8 w-4 h-4 bg-primary rounded-full -translate-x-[34px] hidden md:block"></div>
-                    
-                    <CardContent className="p-6">
-                      {/* Timeline icon for mobile */}
-                      <div className="md:hidden flex items-center mb-4">
-                        <span className="bg-primary/10 p-2 rounded-full text-primary mr-3">
-                          <Briefcase className="h-5 w-5" />
-                        </span>
-                        <span className="text-sm text-primary font-medium">{experience.duration}</span>
-                      </div>
-                      
-                      <div className="flex flex-wrap items-start justify-between mb-4">
-                        <div>
-                          <h3 className="text-lg font-semibold">{experience.position}</h3>
-                          <p className="text-muted-foreground">{experience.company}</p>
-                        </div>
-                        <span className="text-sm text-primary font-medium hidden md:block">{experience.duration}</span>
-                      </div>
-                      
-                      <ul className="space-y-2 ml-4">
-                        {experience.description.map((item, i) => (
-                          <li key={i} className="text-sm relative pl-4">
-                            <span className="absolute left-0 top-2 w-1.5 h-1.5 bg-primary rounded-full"></span>
-                            {item}
-                          </li>
-                        ))}
-                      </ul>
-                    </CardContent>
-                  </Card>
+    <section id="experience" className="section-padding bg-gradient-to-br from-purple-700 via-pink-600 to-orange-500 text-white">
+    <div className="section-container">
+      <div className="text-center mb-12 animate-on-scroll">
+        <h2 className="text-3xl md:text-4xl font-bold mb-4">Work Experience</h2>
+        <p className="text-white/80 max-w-2xl mx-auto">
+          My professional journey and the impactful contributions I've made along the way.
+        </p>
+      </div>
+  
+      <div className="grid lg:grid-cols-1 gap-10 max-w-3xl mx-auto">
+        <div className="animate-on-scroll space-y-6">
+          {experiences.map((experience, index) => (
+            <Card key={index} className="bg-white/10 backdrop-blur-md border border-white/10 text-white">
+              <CardContent className="p-6">
+                <div className="flex flex-wrap justify-between mb-1">
+                  <h4 className="text-lg font-semibold">{experience.position}</h4>
+                  <span className="text-sm text-white/80 font-medium">
+                    {experience.duration}
+                  </span>
                 </div>
-              ))}
-            </div>
-          </div>
+                <p className="text-white/70 mb-3">{experience.company}</p>
+                <ul className="space-y-2 ml-4 list-disc marker:text-white/50 text-sm">
+                  {experience.description.map((item, i) => (
+                    <li key={i}>{item}</li>
+                  ))}
+                </ul>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
-    </section>
+    </div>
+  </section>
   );
 };
 

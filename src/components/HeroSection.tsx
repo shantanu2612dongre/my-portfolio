@@ -1,3 +1,4 @@
+"use client";
 
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -5,54 +6,58 @@ import { motion } from "framer-motion";
 
 const HeroSection = () => {
   return (
-    <section id="home" className="min-h-screen flex flex-col justify-center pt-16 section-padding relative overflow-hidden">
-      <div className="section-container">
-        <div className="max-w-3xl animate-on-scroll">
-          <motion.p 
-            className="text-primary font-medium mb-4 stagger-item"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-          >
-            Hi, my name is
-          </motion.p>
-          
-          <motion.h1 
-            className="text-4xl md:text-6xl lg:text-7xl font-semibold mb-5"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4 }}
-          >
-            <span className="block mb-2">Shantanu Dongre.</span>
-            <span className="gradient-text">I build things for the web.</span>
-          </motion.h1>
-          
-          <motion.p 
-            className="text-muted-foreground text-lg md:text-xl max-w-2xl mb-10"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.6 }}
-          >
-            A Full-Stack Developer with a Product Mindset.
-            Currently, I'm focused on creating accessible, human-centered products.
-          </motion.p>
-          
-          <motion.div 
-            className="flex flex-wrap gap-4"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.8 }}
-          >
-            <Button asChild size="lg" className="rounded-md">
-              <a href="#projects">
-                View My Projects <ArrowRight className="ml-2 h-4 w-4" />
-              </a>
-            </Button>
-            <Button variant="outline" size="lg" asChild className="rounded-md">
-              <a href="#contact">Contact Me</a>
-            </Button>
-          </motion.div>
-        </div>
+    <section
+      id="home"
+      className="min-h-screen flex items-center justify-center pt-20 px-6 bg-gradient-to-br from-orange-500 via-pink-600 to-purple-700 text-white relative overflow-hidden"
+    >
+      <div className="max-w-4xl mx-auto text-center">
+        <motion.p
+          className="text-lg font-medium mb-3 text-white drop-shadow-sm"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.2 }}
+        >
+          👋 Hi, I'm
+        </motion.p>
+
+        <motion.h1
+          className="text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight drop-shadow-md"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.4 }}
+        >
+          <span className="block mb-2">Shantanu Dongre</span>
+          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-pink-400 to-fuchsia-500">
+            I build things for the web.
+          </span>
+        </motion.h1>
+
+        <motion.p
+          className="text-base md:text-lg text-white/80 max-w-2xl mx-auto mt-6 mb-10"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.6 }}
+        >
+          Full-stack developer with a product mindset. I craft accessible,
+          user-first experiences and scalable web apps using modern technologies.
+        </motion.p>
+
+        <motion.div
+          className="flex flex-col sm:flex-row justify-center gap-4"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5, delay: 0.8 }}
+        >
+          <Button asChild size="lg" className="rounded-md">
+            <a href="#projects">
+              View My Projects <ArrowRight className="ml-2 h-4 w-4" />
+            </a>
+          </Button>
+
+          <Button variant="outline" size="lg" asChild className="rounded-md border-white/40 text-white hover:bg-white/10">
+            <a href="#contact">Contact Me</a>
+          </Button>
+        </motion.div>
       </div>
     </section>
   );

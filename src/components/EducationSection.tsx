@@ -62,75 +62,84 @@ const certifications = [
 
 const EducationSection = () => {
   return (
-    <section id="education" className="section-padding bg-accent/30">
-      <div className="section-container">
-        <div className="text-center mb-12 animate-on-scroll">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Education & Certifications
-          </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto">
-            My academic background and professional certifications that have shaped my expertise.
-          </p>
-        </div>
+    <section
+  id="education"
+  className="section-padding bg-gradient-to-br from-purple-700 via-pink-600 to-orange-500 text-white"
+>
+  <div className="section-container">
+    <div className="text-center mb-12 animate-on-scroll">
+      <h2 className="text-3xl md:text-4xl font-bold mb-4">Education & Certifications</h2>
+      <p className="text-white/80 max-w-2xl mx-auto">
+        My academic background and professional certifications that have shaped my expertise.
+      </p>
+    </div>
 
-        <div className="grid lg:grid-cols-2 gap-10">
-          <div className="animate-on-scroll">
-            <h3 className="text-xl font-bold mb-6 flex items-center">
-              <span className="bg-primary/10 p-2 rounded-full text-primary mr-3">
-                <Calendar className="h-5 w-5" />
-              </span>
-              Education
-            </h3>
-            <div className="space-y-6">
-              {education.map((item, index) => (
-                <Card key={index} className="border-border/50">
-                  <CardContent className="p-6">
-                    <div className="flex justify-between flex-wrap mb-1">
-                      <h4 className="text-lg font-semibold">{item.degree}</h4>
-                      <span className="text-sm text-primary font-medium">
-                        {item.year}
-                      </span>
-                    </div>
-                    <p className="text-muted-foreground mb-3">{item.school}</p>
-                    <p className="text-sm">{item.description}</p>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
-
-          <div className="animate-on-scroll">
-            <h3 className="text-xl font-bold mb-6 flex items-center">
-              <span className="bg-primary/10 p-2 rounded-full text-primary mr-3">
-                <Calendar className="h-5 w-5" />
-              </span>
-              Certifications
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              {certifications.map((cert, index) => (
-                <Card key={index} className="border-border/50">
-                  <CardContent className="p-4 flex items-center gap-4">
-                    <div className="h-12 w-12 bg-muted rounded">
-                      <img
-                        src={cert.image}
-                        alt={cert.name}
-                        className="h-full w-full object-cover"
-                      />
-                    </div>
-                    <div>
-                      <h4 className="font-medium text-sm mb-1">{cert.name}</h4>
-                      <p className="text-xs text-muted-foreground">
-                        {cert.issuer} • {cert.year}
-                      </p>
-                    </div>
-                  </CardContent>
-                </Card>
-              ))}
-            </div>
-          </div>
+    <div className="grid lg:grid-cols-2 gap-10">
+      {/* Education */}
+      <div className="animate-on-scroll">
+        <h3 className="text-xl font-bold mb-6 flex items-center">
+          <span className="bg-white/10 p-2 rounded-full text-white mr-3">
+            <Calendar className="h-5 w-5" />
+          </span>
+          Education
+        </h3>
+        <div className="space-y-6">
+          {education.map((item, index) => (
+            <Card
+              key={index}
+              className="border-white/10 bg-white/10 backdrop-blur-md text-white"
+            >
+              <CardContent className="p-6">
+                <div className="flex justify-between flex-wrap mb-1">
+                  <h4 className="text-lg font-semibold">{item.degree}</h4>
+                  <span className="text-sm text-white/80 font-medium">
+                    {item.year}
+                  </span>
+                </div>
+                <p className="text-white/70 mb-3">{item.school}</p>
+                <p className="text-sm text-white/90">{item.description}</p>
+              </CardContent>
+            </Card>
+          ))}
         </div>
       </div>
-    </section>
+
+      {/* Certifications */}
+      <div className="animate-on-scroll">
+        <h3 className="text-xl font-bold mb-6 flex items-center">
+          <span className="bg-white/10 p-2 rounded-full text-white mr-3">
+            <Calendar className="h-5 w-5" />
+          </span>
+          Certifications
+        </h3>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+          {certifications.map((cert, index) => (
+            <Card
+              key={index}
+              className="border-white/10 bg-white/10 backdrop-blur-md text-white"
+            >
+              <CardContent className="p-4 flex items-center gap-4">
+                <div className="h-12 w-12 bg-white/20 rounded overflow-hidden">
+                  <img
+                    src={cert.image}
+                    alt={cert.name}
+                    className="h-full w-full object-cover"
+                  />
+                </div>
+                <div>
+                  <h4 className="font-medium text-sm mb-1">{cert.name}</h4>
+                  <p className="text-xs text-white/70">
+                    {cert.issuer} • {cert.year}
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
   );
 };
 

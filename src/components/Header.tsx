@@ -36,74 +36,74 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-        scrolled
-          ? "bg-background/80 backdrop-blur-lg shadow-sm"
-          : "bg-transparent"
-      }`}
-    >
-      <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <a href="#home" className="font-heading text-xl font-medium">
-          Portfolio
+  className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+    scrolled
+      ? "bg-gradient-to-br from-purple-700 via-pink-600 to-orange-500 backdrop-blur-lg shadow-md"
+      : "bg-transparent"
+  }`}
+>
+  <div className="container mx-auto px-4 h-16 flex items-center justify-between">
+    <a href="#home" className="font-heading text-xl font-semibold text-white">
+      Portfolio
+    </a>
+
+    {/* Desktop Navigation */}
+    <nav className="hidden md:flex items-center space-x-1">
+      {navItems.map((item) => (
+        <a
+          key={item.label}
+          href={item.href}
+          className="px-4 py-2 text-white/80 hover:text-white transition-colors font-medium"
+        >
+          {item.label}
         </a>
-
-        {/* Desktop Navigation */}
-        <nav className="hidden md:flex items-center space-x-1">
-          {navItems.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className="px-4 py-2 text-muted-foreground hover:text-foreground transition-colors"
-            >
-              {item.label}
-            </a>
-          ))}
-          <div className="ml-4">
-            <ThemeSwitcher />
-          </div>
-        </nav>
-
-        {/* Mobile Menu Button */}
-        <div className="flex md:hidden items-center">
-          <ThemeSwitcher />
-          <Button
-            variant="ghost"
-            size="icon"
-            className="ml-2"
-            onClick={toggleMobileMenu}
-          >
-            <Menu className="h-5 w-5" />
-            <span className="sr-only">Toggle menu</span>
-          </Button>
-        </div>
+      ))}
+      <div className="ml-4">
+        <ThemeSwitcher />
       </div>
+    </nav>
 
-      {/* Mobile Menu */}
-      <div
-        className={`fixed inset-0 bg-background z-50 transition-transform duration-300 md:hidden ${
-          mobileMenuOpen ? "translate-x-0" : "translate-x-full"
-        }`}
+    {/* Mobile Menu Button */}
+    <div className="flex md:hidden items-center">
+      <ThemeSwitcher />
+      <Button
+        variant="ghost"
+        size="icon"
+        className="ml-2 text-white"
+        onClick={toggleMobileMenu}
       >
-        <div className="flex justify-end p-4">
-          <Button variant="ghost" size="icon" onClick={closeMobileMenu}>
-            <X className="h-5 w-5" />
-            <span className="sr-only">Close menu</span>
-          </Button>
-        </div>
-        <nav className="flex flex-col items-center mt-16 space-y-6">
-          {navItems.map((item) => (
-            <a
-              key={item.label}
-              href={item.href}
-              className="text-xl py-2"
-              onClick={closeMobileMenu}
-            >
-              {item.label}
-            </a>
-          ))}
-        </nav>
-      </div>
-    </header>
+        <Menu className="h-5 w-5" />
+        <span className="sr-only">Toggle menu</span>
+      </Button>
+    </div>
+  </div>
+
+  {/* Mobile Menu */}
+  <div
+    className={`fixed inset-0 z-40 transition-transform duration-300 md:hidden ${
+      mobileMenuOpen ? "translate-x-0" : "translate-x-full"
+    } bg-gradient-to-br from-purple-700 via-pink-600 to-orange-500 text-white`}
+  >
+    <div className="flex justify-end p-4">
+      <Button variant="ghost" size="icon" onClick={closeMobileMenu} className="text-white">
+        <X className="h-5 w-5" />
+        <span className="sr-only">Close menu</span>
+      </Button>
+    </div>
+    <nav className="flex flex-col items-center mt-16 space-y-6">
+      {navItems.map((item) => (
+        <a
+          key={item.label}
+          href={item.href}
+          className="text-xl py-2 font-medium text-white/90 hover:text-white"
+          onClick={closeMobileMenu}
+        >
+          {item.label}
+        </a>
+      ))}
+    </nav>
+  </div>
+</header>
   );
 };
 
