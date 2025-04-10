@@ -8,7 +8,14 @@ const projectGroups = {
       image: "/projects/focusflow.png",
       link: "https://focusflow.app",
     },
+    {
+      title: "Healio",
+      description: "A online thearpy booking web-app , with login and live chat functionality , where user can chat with registered therapists and book sessions",
+      image: "/projects/Healio.png",
+      link: "https://focusflow.app",
+    }
   ],
+
   "Full-Stack Apps": [
     {
       title: "KitchenCloud",
@@ -20,7 +27,7 @@ const projectGroups = {
       title: "Resume Matcher AI",
       description: "AI tool that parses resumes & JDs to generate match scores and tailored summaries using OpenAI.",
       image: "/projects/resumematcher.png",
-      link: "https://resumematcher.app",
+      link: "https://resumematche.png",
     },
   ],
   "Product & Internal Tools": [
