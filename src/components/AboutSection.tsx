@@ -69,7 +69,7 @@ const keyFeatures = [
 
 const AboutSection = () => {
   return (
-    <section
+   <section
     id="about"
     className="min-h-screen bg-gradient-to-br from-orange-500 via-pink-600 to-purple-700 text-white px-6 py-20"
   >
@@ -79,7 +79,7 @@ const AboutSection = () => {
         <p className="text-yellow-100">Let’s dive into my experience & skills</p>
       </div>
   
-      <div className="grid md:grid-cols-2 gap-10">
+      <div className="grid md:grid-cols-2 gap-10 items-start">
         {/* Left - About */}
         <div>
           <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-xl hover:shadow-2xl transition-all">
@@ -117,15 +117,15 @@ const AboutSection = () => {
   
         {/* Right - Skills */}
         <div>
-          <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-xl hover:shadow-2xl transition-all">
+        <div className="bg-white/10 backdrop-blur-md p-!16 min-h-[500px] rounded-2xl border border-white/10 shadow-xl hover:shadow-2xl transition-all">
             <h3 className="text-2xl font-semibold mb-4 text-white">My Skills</h3>
             <Tabs defaultValue="frontend" className="w-full">
-              <TabsList className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2 mb-4 bg-black/20 border border-white/10 rounded-lg">
+            <TabsList className="flex flex-wrap gap-2 mb-4 bg-black/20 border border-white/10 rounded-lg p-2 justify-center align-center">
                 {Object.keys(skills).map((key) => (
                   <TabsTrigger
                     key={key}
                     value={key}
-                    className="text-white hover:bg-white/10 transition-all"
+                    className="text-white hover:bg-white/10 transition-all min-w-[120px] whitespace-nowrap text-center"
                   >
                     {categoryTitles[key]}
                   </TabsTrigger>
@@ -134,7 +134,7 @@ const AboutSection = () => {
   
               {Object.entries(skills).map(([category, skillList]) => (
                 <TabsContent key={category} value={category}>
-                  <div className="space-y-4">
+                  <div className="space-y-4 mt-12">
                     {skillList.map((skill, i) => (
                       <div key={i}>
                         <div className="flex justify-between mb-1 text-sm text-white font-medium">
