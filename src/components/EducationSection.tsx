@@ -5,16 +5,14 @@ import { Card, CardContent } from "@/components/ui/card";
 const education = [
   {
     degree: "Master of Business Administration (MBA)",
-    school: "Manipal University",
-    year: "2024 - 2026",
+    school: "Manipal University,Jaipur",
     description:
-      "Pursuing online , specialization in Business Administration with a focus on Product Management, Data Analytics, and Distributed Systems.",
+      "Specialization in Business Administration with a focus on Product Management, Data Analytics, and Distributed Systems.",
   },
   
   {
-    degree: "Bachelor of Science in Computer Science",
-    school: "State University",
-    year: "2017 - 2019",
+    degree: "Bachelor of Technology in Information and Technology",
+    school: "Swami Keshwanand Institute of technology , Jaipur",
     description:
       "Core computer science curriculum with electives in information and technology.",
   },
@@ -93,7 +91,6 @@ const EducationSection = () => {
                 <div className="flex justify-between flex-wrap mb-1">
                   <h4 className="text-lg font-semibold">{item.degree}</h4>
                   <span className="text-sm text-white/80 font-medium">
-                    {item.year}
                   </span>
                 </div>
                 <p className="text-white/70 mb-3">{item.school}</p>

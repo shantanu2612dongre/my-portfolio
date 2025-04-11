@@ -23,7 +23,7 @@ const experiences = [
   {
     position: "Trainee Associate Engineer ",
     company: "Wipro Limited",
-    duration: "2019 - 2021",
+    duration: "2021 - 2021",
     description: [
       "Designed architecture diagrams for ETL pipelines, improving efficiency by 40%..",
       "Implemented CI/CD pipelines reducing deployment time by 60%.",

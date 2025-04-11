@@ -12,7 +12,7 @@ const projectGroups = {
       title: "Healio",
       description: "A online thearpy booking web-app , with login and live chat functionality , where user can chat with registered therapists and book sessions",
       image: "/projects/Healio.png",
-      link: "https://focusflow.app",
+      link: "https://github.com/shantanu2612dongre/Healio",
     }
   ],
 
@@ -35,7 +35,7 @@ const projectGroups = {
       title: "Portfolio",
       description: "Built my own portfolio showcasing my knowledge skillset and projects , Built using React, Tailwind CSS, and Framer Motion. Includes animations, smooth scrolling, and responsive design.and Tailwind.",
       image: "/projects/portfolio.png",
-      link: "#",
+      link: "https://my-portfolio-shantanu2612dongres-projects.vercel.app/",
     },
   ],
 };
