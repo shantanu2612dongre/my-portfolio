@@ -24,6 +24,7 @@ const skills = {
   ],
   qa_testing: [
     { name: "Postman / API Testing", level: 80 },
+    { name: "Regression Testing", level: 80 },
     { name: "Salesforce CRM", level: 85 },
     { name: "JIRA / Confluence", level: 85 },
   ],
@@ -117,10 +118,10 @@ const AboutSection = () => {
   
         {/* Right - Skills */}
         <div>
-        <div className="bg-white/10 backdrop-blur-md p-!16 min-h-[500px] rounded-2xl border border-white/10 shadow-xl hover:shadow-2xl transition-all">
+        <div className="bg-white/10 backdrop-blur-md p-12 min-h-[500px] rounded-2xl border border-white/10 shadow-xl hover:shadow-2xl transition-all">
             <h3 className="text-2xl font-semibold mb-4 text-white">My Skills</h3>
             <Tabs defaultValue="frontend" className="w-full">
-            <TabsList className="flex flex-wrap gap-2 mb-4 bg-black/20 border border-white/10 rounded-lg p-2 justify-center align-center">
+            <TabsList className="flex flex-wrap gap-2 mb-8 bg-black/20 border border-white/10 rounded-lg p-2 justify-center align-center">
                 {Object.keys(skills).map((key) => (
                   <TabsTrigger
                     key={key}
