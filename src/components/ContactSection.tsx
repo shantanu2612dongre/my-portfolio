@@ -9,20 +9,6 @@ import React, { useState } from "react";
 const resumeFile = "/documents/SHANTANUDONGRE_Resume 2.pdf";
 
 const ContactSection = () => {
-  const { toast } = useToast();
-
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    
-    // In a real app, you would send the form data to your server
-    toast({
-      title: "Message sent!",
-      description: "Thank you for contacting me. I'll get back to you soon.",
-    });
-    
-    // Reset the form
-    e.currentTarget.reset();
-  };
 
   return (
     <section
@@ -69,7 +55,7 @@ const ContactSection = () => {
                     href="tel:+919950061169"
                     className="font-medium hover:text-white transition-colors"
                   >
-                    +91-9950061169
+                    +91-9950061169 , +91-9887266878
                   </a>
                 </div>
               </CardContent>
