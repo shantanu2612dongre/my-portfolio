@@ -64,24 +64,46 @@ const ContactSection = () => {
   
           <h3 className="text-xl font-semibold mb-4">Socials & Resume</h3>
           <div className="grid grid-cols-2 gap-4 mb-6">
-            <Button variant="outline" className="justify-start border-white/30 text-white hover:bg-white/10" asChild>
-              <a href="https://www.linkedin.com/in/shantanu-dongre-336b9a194/" target="_blank" rel="noopener noreferrer">
-                <Linkedin className="h-5 w-5 mr-2" /> LinkedIn
-              </a>
-            </Button>
-            <Button variant="outline" className="justify-start border-white/30 text-white hover:bg-white/10" asChild>
-              <a href="https://github.com/shantanu2612dongre" target="_blank" rel="noopener noreferrer">
-                <Github className="h-5 w-5 mr-2" /> GitHub
-              </a>
-            </Button>
+          <Button
+  variant="outline"
+  className="justify-start border-gray-400 text-gray-900 hover:bg-gray-100 dark:border-gray-600 dark:text-white dark:hover:bg-gray-700"
+  asChild
+>
+  <a
+    href="https://www.linkedin.com/in/shantanu-dongre-336b9a194/"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    <Linkedin className="h-5 w-5 mr-2" /> LinkedIn
+  </a>
+</Button>
+            <Button
+  variant="outline"
+  className="justify-start border-gray-900 text-gray-900 hover:bg-gray-100 dark:border-white/30 dark:text-white dark:hover:bg-white/10 transition-colors duration-300"
+  asChild
+>
+  <a
+    href="https://github.com/shantanu2612dongre"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center"
+  >
+    <Github className="h-5 w-5 mr-2" />
+    GitHub
+  </a>
+</Button>
           </div>
   
           <div className="flex gap-4">
-            <Button variant="outline" className="border-white/30 text-white hover:bg-white/10" asChild>
-              <a href={resumeFile} target="_self" rel="noopener noreferrer">
-                View Resume
-              </a>
-            </Button>
+          <Button
+  variant="outline"
+  asChild
+  className="border-gray-900 text-gray-900 hover:bg-gray-100 dark:border-gray-500 dark:text-white dark:hover:bg-gray-700 transition-colors duration-300"
+>
+  <a href={resumeFile} target="_self" rel="noopener noreferrer">
+    View Resume
+  </a>
+</Button>
             <Button className="bg-white/20 hover:bg-white/30 text-white" asChild>
               <a href={resumeFile} download="Shantanu_Dongre_Resume.pdf">
                 <Download className="h-4 w-4 mr-2" />

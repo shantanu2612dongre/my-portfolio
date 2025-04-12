@@ -63,7 +63,7 @@ const HeroSection = () => {
   variant="outline"
   size="lg"
   asChild
-  className="rounded-md border-white/40 text-white hover:bg-white/10 hover:border-white transition-all duration-300 shadow-sm hover:shadow-md backdrop-blur-md group"
+  className="rounded-md border-gray-900 text-gray-900 hover:bg-gray-100 hover:border-gray-900 dark:border-white/40 dark:text-white dark:hover:bg-white/10 dark:hover:border-white transition-all duration-300 shadow-sm hover:shadow-md backdrop-blur-md group"
 >
   <a href="#contact" className="flex items-center gap-2">
     Contact Me
