@@ -70,22 +70,22 @@ const keyFeatures = [
 
 const AboutSection = () => {
   return (
-   <section
+    <section
     id="about"
-    className="min-h-screen bg-gradient-to-br from-orange-500 via-pink-600 to-purple-700 text-white px-6 py-20"
+    className="min-h-screen bg-[#f5f5dc] text-black px-6 py-3 rounded-lg transition"
   >
     <div className="max-w-6xl mx-auto">
       <div className="text-center mb-14">
-        <h2 className="text-4xl font-bold mb-2 text-white">About Me</h2>
-        <p className="text-yellow-100">Let’s dive into my experience & skills</p>
+        <h2 className="text-4xl font-bold mb-2">About Me</h2>
+        <p className="text-gray-700">Let’s dive into my experience & skills</p>
       </div>
   
       <div className="grid md:grid-cols-2 gap-10 items-start">
         {/* Left - About */}
         <div>
-          <div className="bg-white/10 backdrop-blur-md p-8 rounded-2xl border border-white/10 shadow-xl hover:shadow-2xl transition-all">
-            <h3 className="text-2xl font-semibold mb-4 text-white">Who I Am</h3>
-            <p className="text-white/90 leading-relaxed">
+          <div className="bg-white p-8 rounded-2xl border border-amber-200 shadow-xl hover:shadow-2xl transition-all">
+            <h3 className="text-2xl font-semibold mb-4">Who I Am</h3>
+            <p className="text-gray-800 leading-relaxed">
               Salesforce Certified Admin and full-stack developer with a background
               in software testing and a passion for product thinking. I build
               robust web apps using Python, Django, React, and Node.js —
@@ -97,16 +97,14 @@ const AboutSection = () => {
               {keyFeatures.map((feature, index) => (
                 <Card
                   key={index}
-                  className="bg-white/10 border border-white/10 backdrop-blur-lg p-4 rounded-xl shadow-lg hover:scale-[1.02] transition-all"
+                  className="bg-white border border-amber-200 p-4 rounded-xl shadow-lg hover:scale-[1.02] transition-all"
                 >
                   <CardContent className="p-0 flex flex-col items-center text-center">
                     <div className="h-10 w-10 rounded-full bg-gradient-to-br from-yellow-300 via-pink-400 to-fuchsia-500 text-white flex items-center justify-center mb-2">
                       {feature.icon}
                     </div>
-                    <h4 className="text-white font-medium text-sm">
-                      {feature.title}
-                    </h4>
-                    <p className="text-white/80 text-xs mt-1">
+                    <h4 className="font-medium text-sm">{feature.title}</h4>
+                    <p className="text-gray-600 text-xs mt-1">
                       {feature.description}
                     </p>
                   </CardContent>
@@ -118,15 +116,15 @@ const AboutSection = () => {
   
         {/* Right - Skills */}
         <div>
-        <div className="bg-white/10 backdrop-blur-md p-12 min-h-[500px] rounded-2xl border border-white/10 shadow-xl hover:shadow-2xl transition-all">
-            <h3 className="text-2xl font-semibold mb-4 text-white">My Skills</h3>
+          <div className="bg-white p-12 min-h-[500px] rounded-2xl border border-amber-200 shadow-xl hover:shadow-2xl transition-all">
+            <h3 className="text-2xl font-semibold mb-4">My Skills</h3>
             <Tabs defaultValue="frontend" className="w-full">
-            <TabsList className="flex flex-wrap gap-2 mb-8 bg-black/20 border border-white/10 rounded-lg p-2 justify-center align-center">
+              <TabsList className="flex flex-wrap gap-2 mb-8 bg-amber-100 border border-amber-300 rounded-lg p-2 justify-center align-center">
                 {Object.keys(skills).map((key) => (
                   <TabsTrigger
                     key={key}
                     value={key}
-                    className="text-white hover:bg-white/10 transition-all min-w-[120px] whitespace-nowrap text-center"
+                    className="text-black hover:bg-amber-200 transition-all min-w-[120px] whitespace-nowrap text-center"
                   >
                     {categoryTitles[key]}
                   </TabsTrigger>
@@ -138,11 +136,11 @@ const AboutSection = () => {
                   <div className="space-y-4 mt-12">
                     {skillList.map((skill, i) => (
                       <div key={i}>
-                        <div className="flex justify-between mb-1 text-sm text-white font-medium">
+                        <div className="flex justify-between mb-1 text-sm font-medium">
                           <span>{skill.name}</span>
-                          <span className="text-white/70">{skill.level}%</span>
+                          <span className="text-gray-600">{skill.level}%</span>
                         </div>
-                        <div className="h-2 bg-white/20 rounded-full overflow-hidden">
+                        <div className="h-2 bg-amber-100 rounded-full overflow-hidden">
                           <div
                             className="h-full bg-gradient-to-r from-yellow-200 via-pink-400 to-fuchsia-500 rounded-full"
                             style={{ width: `${skill.level}%` }}
