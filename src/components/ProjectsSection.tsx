@@ -23,7 +23,7 @@ const projectGroups = {
       title: "MagicBricks Casestudy",
       description: "A product case study on improving conversions and trust in real estate listings.",
       image: "/projects/magicbricks-thumbnail.png",
-      pdf: "public/projects/pdf/Magicbrick_casestudy.pdf",
+      pdf: "/projects/pdf/Magicbrick_casestudy.pdf",
     },
     {
       title: "Bumble- Increase ARPU",
