@@ -14,6 +14,12 @@ const projectGroups = {
       image: "/projects/Healio.png",
       link: "https://github.com/shantanu2612dongre/Healio",
     },
+    {
+      title: "SplitEase - Wireframe",
+      description: "Wireframe designed for a rent and payment splitting app ",
+      image: "/projects/bumble.png",
+      pdf: "/projects/pdf/SplitEase-Wireframe.pdf",
+    },
 
 
   ],
@@ -48,6 +54,18 @@ const projectGroups = {
       description: "Setting milestone 1 as Increasing the Text review count in Food delivery vertical for Zomato",
       image: "/projects/Zomato.png",
       pdf: "/projects/pdf/Zomato-Milestone.pdf",
+    },
+    {
+      title: "Pharmeasy - Teardown",
+      description: "Pharmeasy product teardown for ordering an item section",
+      image: "/projects/Pharmeasy.png",
+      pdf: "/projects/pdf/Pharmeasy - Product Teardown.pdf",
+    },
+    {
+      title: "Zepto Product Teardown",
+      description: "A detailed teardwon of zepto's product discovery and search experience ",
+      image: "/projects/Zepto.png",
+      pdf: "/projects/pdf/Zepto Product Teardown.pdf",
     },
   ],
 
