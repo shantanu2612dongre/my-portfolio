@@ -19,7 +19,7 @@ const ContactSection = () => {
   >
     <div className="section-container">
       <div className="text-center mb-12 animate-on-scroll">
-        <h2 className="text-3xl md:text-4xl font-bold mb-6">Get In Touch</h2>
+        <h2 className="text-3xl text-[#30F191] md:text-4xl font-bold mb-6">Get In Touch</h2>
         <p className="text-black/80 max-w-2xl mx-auto">
           Have a project in mind or want to discuss opportunities? Feel free to reach out.
         </p>
@@ -68,7 +68,7 @@ const ContactSection = () => {
           <div className="grid grid-cols-2 gap-4 mb-6">
           <Button
   variant="outline"
-  className="justify-start border-gray-400 text-gray-900 hover:bg-gray-100 dark:border-gray-600 dark:text-white dark:hover:bg-gray-700"
+  className="border border-gray-300 text-gray-900 bg-white hover:bg-[#e8fdf5] dark:border-gray-600 dark:text-white dark:bg-gray-800 dark:hover:bg-[#1b3d35] transition-colors duration-300 rounded-md px-4 py-2"
   asChild
 >
   <a
@@ -81,7 +81,7 @@ const ContactSection = () => {
 </Button>
             <Button
   variant="outline"
-  className="justify-start border-gray-900 text-gray-900 hover:bg-gray-100 dark:border-white/30 dark:text-white dark:hover:bg-white/10 transition-colors duration-300"
+  className="border border-gray-300 text-gray-900 bg-white hover:bg-[#e8fdf5] dark:border-gray-600 dark:text-white dark:bg-gray-800 dark:hover:bg-[#1b3d35] transition-colors duration-300 rounded-md px-4 py-2"
   asChild
 >
   <a
@@ -100,13 +100,13 @@ const ContactSection = () => {
           <Button
   variant="outline"
   asChild
-  className="border-gray-900 text-gray-900 hover:bg-gray-100 dark:border-gray-500 dark:text-white dark:hover:bg-gray-700 transition-colors duration-300"
+  className="justify-start border-gray-900 text-gray-900 hover:bg-gray-100 dark:border-white/30 dark:text-white dark:hover:bg-black/30 transition-colors duration-300"
 >
   <a href="/projects/pdf/SHANTANU_DONGRE_RESUME_PM.pdf" target="_self" rel="noopener noreferrer">
     View Resume
   </a>
 </Button>
-            <Button className="bg-black/100 hover:bg-white/30 text-white" asChild>
+            <Button className="bg-black/100 hover:bg-black/30 text-white" asChild>
               <a href={resumeFile} download="Shantanu_Dongre_Resume.pdf">
                 <Download className="h-4 w-4 mr-2" />
                 Download

@@ -5,66 +5,73 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Code, Briefcase, Book, Star } from "lucide-react";
 
 const skills = {
-  frontend: [
-    { name: "JavaScript", level: 90 },
-    { name: "React", level: 85 },
+  development: [
     { name: "HTML/CSS/Tailwind CSS", level: 90 },
-    { name: "Figma / Balsamiq (Wireframing)", level: 70 },
-  ],
-  backend: [
-    { name: "Node.js", level: 80 },
+    { name: "JavaScript", level: 90 },
+    { name: "MERN Stack", level: 85 },
     { name: "Python", level: 80 },
-    { name: "Java", level: 85 },
     { name: "Django / REST APIs", level: 80 },
-    { name: "SQL", level: 75 },
-  ],
-  devops: [
     { name: "Git & GitHub", level: 80 },
-    { name: "AWS (EC2, S3, RDS)", level: 75 },
   ],
+
   qa_testing: [
     { name: "Postman / API Testing", level: 80 },
     { name: "Regression Testing", level: 80 },
     { name: "Salesforce CRM", level: 85 },
     { name: "JIRA / Confluence", level: 85 },
+    { name: "Agile / Scrum Methodologies", level: 90 },
   ],
   product_management: [
-    { name: "Agile / Scrum Methodologies", level: 90 },
-    { name: "User Story Writing", level: 80 },
-    { name: "Product Roadmapping", level: 75 },
-    { name: "Stakeholder Communication", level: 85 },
-    { name: "Analytics / A/B Testing", level: 70 },
+    { name: "Product Lifecycle Management [Product Planning, Product Development, Product Launch]", level: 90 },
+    { name: "User Story Writing", level: 93 },
+    { name: "Product Roadmapping", level: 95 },
+    { name: "Writing structured PRDs", level: 97 },
+    { name: "KPI Measurement", level: 95 },
+    { name: "A/B Testing", level: 92 },
+    { name: "Figma / Canva /Whimsical /Jira /Taiga (Wireframing)", level: 70 },
+  ],
+  soft_skills:[
+    { name: "Satkeholder Communication", level: 70 },
+    { name: "Customer Interacion", level: 70 },
+    { name: "Attention to detail in ETA", level: 70 },
+  ],
+  tools:[
+    { name: "User Research", level: 70 },
+    { name: "Wireframming", level: 70 },
+    { name: "User Journey", level: 70 },
+    { name: "User Research", level: 70 },
   ],
 };
 
 const categoryTitles: Record<string, string> = {
-  frontend: "Frontend",
-  backend: "Backend",
-  devops: "DevOps",
+  development: "Development",
   qa_testing: "QA & Testing",
   product_management: "Product Management",
+  soft_skills: "Soft Skills",
+  tools: "Product Tools",
 };
 
 const keyFeatures = [
-  {
-    icon: <Code className="h-6 w-6" />,
-    title: "Frontend Development",
-    description: "Building responsive and accessible user interfaces with modern web technologies.",
-  },
+
   {
     icon: <Briefcase className="h-6 w-6" />,
-    title: "Backend Development",
-    description: "Creating scalable server-side applications and APIs.",
+    title: "Product Strategy",
+    description: "Roadmapping, A/B Tests, Project Management.",
   },
   {
     icon: <Book className="h-6 w-6" />,
-    title: "Design Thinking",
-    description: "Applying user-centered design principles to create intuitive experiences.",
+    title: "Product Design",
+    description: "User Stories, User Flows, Wireframes, Persona Writing.",
   },
   {
     icon: <Star className="h-6 w-6" />,
-    title: "Problem Solving",
-    description: "Finding elegant solutions to complex technical challenges.",
+    title: "Market & User Research",
+    description: "Market Analysis, Experiment Design,Usability Testing.",
+  },
+  {
+    icon: <Code className="h-6 w-6" />,
+    title: " Product Development",
+    description: "Building responsive and accessible user interfaces with modern web technologies.",
   },
 ];
 
@@ -73,7 +80,7 @@ const AboutSection = () => {
     <section
     id="about"
     className="section-padding bg-white text-black"
-      style={{ backgroundImage: "url('/projects/background.png')" }}
+      //style={{ backgroundImage: "url('/projects/background.png')" }}
     
   >
     <div className="max-w-6xl mx-auto">
@@ -84,19 +91,15 @@ const AboutSection = () => {
         <p className="text-gray-700">Let’s dive into my experience & skills</p>
       </div>
   
-      <div className="grid md:grid-cols-2 gap-10 items-start">
+      <div className="grid md:grid-cols- gap-10 items-start">
         {/* Left - About */}
         <div>
           <div className="bg-white p-8 rounded-2xl border border-amber-200 shadow-xl hover:shadow-2xl transition-all">
-          <h3 className="text-4xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#2cf393] via-[#10d09d] to-[#0ba17a] drop-shadow-sm">
+          <h3 className="text-5xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#2cf393] via-[#10d09d] to-[#0ba17a] drop-shadow-sm">
   Who am I
 </h3>
-            <p className="text-gray-800 leading-relaxed">
-              Salesforce Certified Admin and full-stack developer with a background
-              in software testing and a passion for product thinking. I build
-              robust web apps using Python, Django, React, and Node.js —
-              combining technical depth with a user-first approach. I thrive at the
-              intersection of tech and product, always learning and improving.
+            <p className="text-gray-800 text-[17px]  font-semibold leading-relaxed">
+            Product Manager with a certified background in Salesforce and hands-on experience across the full product lifecycle — from discovery to delivery. I bring a strong foundation in user research, roadmap execution, and cross-functional collaboration, backed by a technical edge in platforms like Salesforce (Service, Sales, Marketing, Community Cloud). My strength lies in building scalable, user-first solutions that align product strategy with measurable business outcomes.
             </p>
   
             <div className="grid grid-cols-2 gap-4 mt-8">
@@ -106,10 +109,11 @@ const AboutSection = () => {
                   className="bg-white border border-amber-200 p-4 rounded-xl shadow-lg hover:scale-[1.02] transition-all"
                 >
                   <CardContent className="p-0 flex flex-col items-center text-center">
-                    <div className="h-10 w-10 rounded-full bg-gradient-to-br from-yellow-300 via-pink-400 to-fuchsia-500 text-white flex items-center justify-center mb-2">
+                    <div className="h-10 w-10 rounded-full bg-gradient-to-br from-[#10d09d] to-[#2cf393] hover:from-[#2cf393] hover:to-[#10d09d] text-white flex items-center justify-center mb-2">
+                    
                       {feature.icon}
                     </div>
-                    <h4 className="font-medium text-sm">{feature.title}</h4>
+                    <h4 className="font-medium text-black text-sm">{feature.title}</h4>
                     <p className="text-gray-600 text-xs mt-1">
                       {feature.description}
                     </p>
@@ -126,14 +130,16 @@ const AboutSection = () => {
           <h2 className="text-4xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#2cf393] via-[#10d09d] to-[#0ba17a] drop-shadow-sm">
   My Skills
 </h2>
-            <Tabs defaultValue="frontend" className="w-full">
-              <TabsList className="flex flex-wrap gap-2 mb-8 bg-amber-100 border border-amber-300 rounded-lg p-2 justify-center align-center">
+            <Tabs defaultValue="Development" className="w-full">
+            <TabsList className="flex flex-wrap gap-2 mb-8 bg-gradient-to-r from-white via-[#e0fff2] to-[#caffea] border border-[#2cf393]/30 rounded-lg p-1 justify-center items-center">
+
                 {Object.keys(skills).map((key) => (
                   <TabsTrigger
-                    key={key}
-                    value={key}
-                    className="text-black hover:bg-amber-200 transition-all min-w-[120px] whitespace-nowrap text-center"
-                  >
+                  key={key}
+                  value={key}
+                  className="text-black data-[state=active]:bg-gradient-to-r data-[state=active]:from-[#2cf393] data-[state=active]:to-[#0ba17a] data-[state=active]:text-white data-[state=active]:shadow-lg hover:bg-[#e0fff2] transition-all min-w-[120px] whitespace-nowrap text-center rounded-md px-4 py-2"
+                >
+                  
                     {categoryTitles[key]}
                   </TabsTrigger>
                 ))}
@@ -149,11 +155,16 @@ const AboutSection = () => {
                           <span className="text-gray-600">{skill.level}%</span>
                         </div>
                         <div className="h-2 bg-amber-100 rounded-full overflow-hidden">
-                          <div
-                            className="h-full bg-gradient-to-r from-yellow-200 via-pink-400 to-fuchsia-500 rounded-full"
-                            style={{ width: `${skill.level}%` }}
-                          />
-                        </div>
+  <div
+    className="h-full bg-gradient-to-r from-[#2cf393] via-[#10d09d] to-[#0ba17a] rounded-full transition-all duration-700 ease-in-out hover:shadow-[0_0_8px_#10d09d]"
+    style={{ width: `${skill.level}%` }}
+  />
+</div><div className="h-2 bg-amber-100 rounded-full overflow-hidden">
+  <div
+    className="h-full bg-gradient-to-r from-[#2cf393] via-[#10d09d] to-[#0ba17a] rounded-full transition-all duration-700 ease-in-out hover:shadow-[0_0_8px_#10d09d]"
+    style={{ width: `${skill.level}%` }}
+  />
+</div>
                       </div>
                     ))}
                   </div>

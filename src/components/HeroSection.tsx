@@ -39,8 +39,7 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
         >
-          Full-stack developer with a product mindset. I craft accessible,
-          user-first experiences and scalable web apps using modern technologies.
+          Product Manager with a developer mindset. I craft accessible,user-first experiences and scalable web apps using modern technologies.
         </motion.p>
 
         <motion.div

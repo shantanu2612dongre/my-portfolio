@@ -58,11 +58,11 @@ const certifications = [
 const EducationSection = () => {
   return (
     <section id="education" className="section-padding bg-white text-black"
-    style={{ backgroundImage: "url('/projects/background.png')" }}
+    // style={{ backgroundImage: "url('/projects/background.png')" }}
     >
       <div className="section-container">
         <div className="text-center mb-12">
-        <h2 className="text-6xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#2cf393] via-[#10d09d] to-[#0ba17a] drop-shadow-sm">
+        <h2 className="text-5xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#2cf393] via-[#10d09d] to-[#0ba17a] drop-shadow-sm">
   Education and Certifications
 </h2>
           <p className="text-gray-700 max-w-2xl mx-auto">
@@ -74,20 +74,20 @@ const EducationSection = () => {
           {/* Education */}
           <div>
             <h3 className="text-xl font-bold mb-6 flex items-center">
-              <span className="bg-gray-200 p-2 rounded-full text-black mr-3">
+              <span className="bg-white-200 p-2 rounded-full text-black mr-3">
                 <Calendar className="h-5 w-5" />
               </span>
               Education
             </h3>
             <div className="space-y-6">
               {education.map((item, index) => (
-                <Card key={index} className="bg-black/10 border border-gray-200 shadow-sm text-black backdrop-blur-sm p-4 rounded-md">
+                <Card key={index} className="bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg text-white p-6 rounded-xl">
                   <CardContent className="p-6">
                     <div className="flex justify-between flex-wrap mb-1">
-                      <h4 className="text-lg font-semibold">{item.degree}</h4>
+                      <h4 className="text-lg text-black font-semibold">{item.degree}</h4>
                     </div>
-                    <p className="text-gray-800 mb-3">{item.school}</p>
-                    <p className="text-sm text-gray-600">{item.description}</p>
+                    <p className="text-gray-900 mb-3">{item.school}</p>
+                    <p className="text-sm text-gray-900">{item.description}</p>
                   </CardContent>
                 </Card>
               ))}
@@ -104,7 +104,7 @@ const EducationSection = () => {
             </h3>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {certifications.map((cert, index) => (
-                <Card key={index} className="bg-black/10 border border-gray-200 shadow-sm text-black backdrop-blur-sm p-4 rounded-md">"
+                <Card key={index} className="bg-white/10 backdrop-blur-sm border border-white/20 shadow-lg text-black p-6 rounded-xl">
                  <Card className="border-gray/10 bg-white/10 backdrop-blur-md text-black"></Card>
                   <CardContent className="p-4 flex items-center gap-4">
                     <div className="h-12 w-12 rounded overflow-hidden">

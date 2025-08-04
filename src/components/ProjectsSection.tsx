@@ -86,7 +86,9 @@ const projectGroups = {
 const ProjectsSection = () => {
   return (
     <section id="projects" className="py-20 px-4 bg-white text-black"
-    style={{ backgroundImage: "url('/projects/background.png')" }}>
+      // style={{ backgroundImage: "url('/projects/background.png')" }}
+      >
+
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12 animate-on-scroll">
         <h2 className="text-5xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#2cf393] via-[#10d09d] to-[#0ba17a] drop-shadow-sm">

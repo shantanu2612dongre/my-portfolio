@@ -38,8 +38,8 @@ const Header = () => {
     <header
     className={`fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-6xl rounded-full transition-all duration-300 px-6 ${
       scrolled
-        ? "bg-black/20 backdrop-blur-lg shadow-lg"
-        : "bg-black/10 backdrop-blur-md"
+        ? "bg-black/5 backdrop-blur-lg shadow-lg"
+        : "bg-black/5 backdrop-blur-md"
         
   }`}
   
@@ -55,7 +55,7 @@ const Header = () => {
         <a
           key={item.label}
           href={item.href}
-          className="px-4 py-2 text-black/80 hover:text-white transition-colors font-medium"
+          className="px-4 py-2 text-black/80 hover:text-[#2cf393] hover:text-lg transition-all duration-300 font-medium"
         >
           {item.label}
         </a>
