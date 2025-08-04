@@ -72,11 +72,15 @@ const AboutSection = () => {
   return (
     <section
     id="about"
-    className="min-h-screen bg-[#f5f5dc] text-black px-6 py-3 rounded-lg transition"
+    className="section-padding bg-white text-black"
+      style={{ backgroundImage: "url('/projects/background.png')" }}
+    
   >
     <div className="max-w-6xl mx-auto">
       <div className="text-center mb-14">
-        <h2 className="text-4xl font-bold mb-2">About Me</h2>
+      <h2 className="text-6xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#2cf393] via-[#10d09d] to-[#0ba17a] drop-shadow-sm">
+  About Me
+</h2>
         <p className="text-gray-700">Let’s dive into my experience & skills</p>
       </div>
   
@@ -84,7 +88,9 @@ const AboutSection = () => {
         {/* Left - About */}
         <div>
           <div className="bg-white p-8 rounded-2xl border border-amber-200 shadow-xl hover:shadow-2xl transition-all">
-            <h3 className="text-2xl font-semibold mb-4">Who I Am</h3>
+          <h3 className="text-4xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#2cf393] via-[#10d09d] to-[#0ba17a] drop-shadow-sm">
+  Who am I
+</h3>
             <p className="text-gray-800 leading-relaxed">
               Salesforce Certified Admin and full-stack developer with a background
               in software testing and a passion for product thinking. I build
@@ -117,7 +123,9 @@ const AboutSection = () => {
         {/* Right - Skills */}
         <div>
           <div className="bg-white p-12 min-h-[500px] rounded-2xl border border-amber-200 shadow-xl hover:shadow-2xl transition-all">
-            <h3 className="text-2xl font-semibold mb-4">My Skills</h3>
+          <h2 className="text-4xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#2cf393] via-[#10d09d] to-[#0ba17a] drop-shadow-sm">
+  My Skills
+</h2>
             <Tabs defaultValue="frontend" className="w-full">
               <TabsList className="flex flex-wrap gap-2 mb-8 bg-amber-100 border border-amber-300 rounded-lg p-2 justify-center align-center">
                 {Object.keys(skills).map((key) => (

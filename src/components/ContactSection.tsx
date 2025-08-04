@@ -13,12 +13,14 @@ const ContactSection = () => {
   return (
     <section
     id="contact"
-    className="section-padding bg-gradient-to-br from-purple-700 via-pink-600 to-orange-500 text-white"
+    className="section-padding bg-gradient-to-br from-purple-700 via-pink-600 to-orange-500 text-black"
+    style={{ backgroundImage: "url('/projects/background.png')" }}
+
   >
     <div className="section-container">
       <div className="text-center mb-12 animate-on-scroll">
-        <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
-        <p className="text-white/80 max-w-2xl mx-auto">
+        <h2 className="text-3xl md:text-4xl font-bold mb-6">Get In Touch</h2>
+        <p className="text-black/80 max-w-2xl mx-auto">
           Have a project in mind or want to discuss opportunities? Feel free to reach out.
         </p>
       </div>
@@ -26,17 +28,17 @@ const ContactSection = () => {
       <div className="grid md:grid-cols-2 gap-10">
         <div className="animate-on-scroll">
           <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
-          <div className="grid gap-4 mb-8">
-            <Card className="border-white/10 bg-white/10 backdrop-blur-md text-white">
+          <div className="grid gap-4 mb-6">
+            <Card className="border-gray/10 bg-white/10 backdrop-blur-md text-black">
               <CardContent className="p-4 flex items-center gap-3">
-                <div className="bg-white/20 p-2 rounded-full text-white">
+                <div className="bg-black/20 p-2 rounded-full text-black">
                   <Mail className="h-5 w-5" />
                 </div>
                 <div>
-                  <p className="text-sm text-white/70">Email</p>
+                  <p className="text-sm text-black/70">Email</p>
                   <a
                     href="mailto:dongreshantanu2612@gmail.com"
-                    className="font-medium hover:text-white transition-colors"
+                    className="font-medium hover:text-black transition-colors"
                   >
                     dongreshantanu2612@gmail.com
                   </a>
@@ -44,16 +46,16 @@ const ContactSection = () => {
               </CardContent>
             </Card>
   
-            <Card className="border-white/10 bg-white/10 backdrop-blur-md text-white">
+            <Card className="border-gray/10 bg-white/10 backdrop-blur-md text-black">
               <CardContent className="p-4 flex items-center gap-3">
-                <div className="bg-white/20 p-2 rounded-full text-white">
+                <div className="bg-black/20 p-2 rounded-full text-black">
                   <Phone className="h-5 w-5" />
                 </div>
                 <div>
-                  <p className="text-sm text-white/70">Phone</p>
+                  <p className="text-sm text-black/70">Phone</p>
                   <a
                     href="tel:+919950061169"
-                    className="font-medium hover:text-white transition-colors"
+                    className="font-medium hover:text-green transition-colors"
                   >
                     +91-9950061169 , +91-9887266878
                   </a>
@@ -62,7 +64,7 @@ const ContactSection = () => {
             </Card>
           </div>
   
-          <h3 className="text-xl font-semibold mb-4">Socials & Resume</h3>
+          <h3 className="text-xl font-semibold mb-6">Socials & Resume</h3>
           <div className="grid grid-cols-2 gap-4 mb-6">
           <Button
   variant="outline"
@@ -104,7 +106,7 @@ const ContactSection = () => {
     View Resume
   </a>
 </Button>
-            <Button className="bg-white/20 hover:bg-white/30 text-white" asChild>
+            <Button className="bg-black/100 hover:bg-white/30 text-white" asChild>
               <a href={resumeFile} download="Shantanu_Dongre_Resume.pdf">
                 <Download className="h-4 w-4 mr-2" />
                 Download

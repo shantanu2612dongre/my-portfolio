@@ -36,14 +36,16 @@ const Header = () => {
 
   return (
     <header
-  className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-    scrolled
-      ? "bg-gradient-to-br from-purple-700 via-pink-600 to-orange-500 backdrop-blur-lg shadow-md"
-      : "bg-transparent"
+    className={`fixed top-6 left-1/2 transform -translate-x-1/2 z-50 w-[95%] max-w-6xl rounded-full transition-all duration-300 px-6 ${
+      scrolled
+        ? "bg-black/20 backdrop-blur-lg shadow-lg"
+        : "bg-black/10 backdrop-blur-md"
+        
   }`}
+  
 >
   <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-    <a href="#home" className="font-heading text-xl font-semibold text-white">
+    <a href="#home" className="font-heading text-xl font-semibold text-black">
       Portfolio
     </a>
 
@@ -53,7 +55,7 @@ const Header = () => {
         <a
           key={item.label}
           href={item.href}
-          className="px-4 py-2 text-white/80 hover:text-white transition-colors font-medium"
+          className="px-4 py-2 text-black/80 hover:text-white transition-colors font-medium"
         >
           {item.label}
         </a>

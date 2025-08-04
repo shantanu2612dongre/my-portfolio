@@ -9,6 +9,7 @@ const HeroSection = () => {
     <section
       id="home"
       className="min-h-screen flex items-center justify-center pt-20 px-6 bg-gradient-to-br from-orange-500 via-pink-600 to-purple-700 text-white relative overflow-hidden"
+      style={{ backgroundImage: "url('/projects/background.png')" }}
     >
       <div className="max-w-4xl mx-auto text-center">
         <motion.p
@@ -26,14 +27,14 @@ const HeroSection = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.4 }}
         >
-          <span className="block mb-2">Shantanu Dongre</span>
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-200 via-pink-400 to-fuchsia-500">
-            I build things for the web.
-          </span>
+          <span className="block mb-3 text-black">Shantanu Dongre</span>
+          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-[#2cf393] via-[#10d09d] to-[#0ba17a] drop-shadow-sm">
+  Building products for human.
+</span>
         </motion.h1>
 
         <motion.p
-          className="text-base md:text-lg text-white/90 max-w-2xl mx-auto mt-6 mb-10"
+          className="text-base md:text-lg text-black/90 max-w-2xl mx-auto mt-6 mb-10"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.6 }}
@@ -50,8 +51,9 @@ const HeroSection = () => {
         >
          <Button
   asChild
+  variant="outline"
   size="lg"
-  className="rounded-md bg-gradient-to-r from-purple-600 to-pink-500 hover:from-pink-500 hover:to-purple-600 transition-all duration-300 text-white shadow-md hover:shadow-lg"
+  className=" w-full px-8 py-4 text-lg rounded-lg bg-gradient-to-r from-[#10d09d] to-[#2cf393] hover:from-[#2cf393] hover:to-[#10d09d] transition-all duration-300 text-black shadow-md hover:shadow-lg"
 >
   <a href="#projects" className="flex items-center gap-2">
     View My Projects
@@ -63,7 +65,7 @@ const HeroSection = () => {
   variant="outline"
   size="lg"
   asChild
-  className="rounded-md border-gray-900 text-gray-900 hover:bg-gray-100 hover:border-gray-900 dark:border-white/40 dark:text-white dark:hover:bg-white/10 dark:hover:border-white transition-all duration-300 shadow-sm hover:shadow-md backdrop-blur-md group"
+  className=" w-full px-8 py-4 text-lg rounded-lg bg-gradient-to-r from-[#10d09d] to-[#2cf393] hover:from-[#2cf393] hover:to-[#10d09d] transition-all duration-300 text-black shadow-md hover:shadow-lg"
 >
   <a href="#contact" className="flex items-center gap-2">
     Contact Me
