@@ -13,7 +13,7 @@ const HeroSection = () => {
     >
       <div className="max-w-4xl mx-auto text-center">
         <motion.p
-          className="text-lg font-medium mb-3 text-white drop-shadow-sm"
+          className="text-lg font-3-large mb-3 text-black drop-shadow-sm"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}

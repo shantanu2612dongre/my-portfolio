@@ -5,6 +5,15 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Code, Briefcase, Book, Star } from "lucide-react";
 
 const skills = {
+  product_management: [
+    { name: "Product Lifecycle Management [Product Planning, Product Development, Product Launch]", level: 90 },
+    { name: "User Story Writing", level: 93 },
+    { name: "User Journey", level: 96 },
+    { name: "Product Roadmapping", level: 95 },
+    { name: "User Research", level: 92 },
+    { name: "Writing structured PRDs", level: 97 },
+    { name: "KPI Measurement", level: 95 },
+  ],
   development: [
     { name: "HTML/CSS/Tailwind CSS", level: 90 },
     { name: "JavaScript", level: 90 },
@@ -13,42 +22,43 @@ const skills = {
     { name: "Django / REST APIs", level: 80 },
     { name: "Git & GitHub", level: 80 },
   ],
+  data_visualization:[
+    { name: "Dashboard Creation", level: 87 },
+    { name: "Excel.Power BI,Tableau", level: 91 },
+    { name: "SQL Queries", level: 85 },
+    { name: "Lucid Chart", level: 95 },
+    { name:"Adobe Analytics", level: 92 },
+  ],
 
   qa_testing: [
     { name: "Postman / API Testing", level: 80 },
     { name: "Regression Testing", level: 80 },
     { name: "Salesforce CRM", level: 85 },
-    { name: "JIRA / Confluence", level: 85 },
     { name: "Agile / Scrum Methodologies", level: 90 },
-  ],
-  product_management: [
-    { name: "Product Lifecycle Management [Product Planning, Product Development, Product Launch]", level: 90 },
-    { name: "User Story Writing", level: 93 },
-    { name: "Product Roadmapping", level: 95 },
-    { name: "Writing structured PRDs", level: 97 },
-    { name: "KPI Measurement", level: 95 },
     { name: "A/B Testing", level: 92 },
-    { name: "Figma / Canva /Whimsical /Jira /Taiga (Wireframing)", level: 70 },
   ],
   soft_skills:[
-    { name: "Satkeholder Communication", level: 70 },
-    { name: "Customer Interacion", level: 70 },
-    { name: "Attention to detail in ETA", level: 70 },
+    { name: "Satkeholder Communication", level: 97 },
+    { name: "Customer Interacion", level: 89 },
+    { name: "Attention to detail in ETA", level: 94 },
+    { name: "Conflict Management", level: 97 },
+
   ],
   tools:[
-    { name: "User Research", level: 70 },
-    { name: "Wireframming", level: 70 },
-    { name: "User Journey", level: 70 },
-    { name: "User Research", level: 70 },
+    { name: "Figma / Canva /Whimsical /Taiga (Wireframing)", level: 90 },
+    { name: "JIRA / Confluence", level: 93 },
+    { name: "Mixpanel ", level: 93 },
+  
   ],
 };
 
 const categoryTitles: Record<string, string> = {
   development: "Development",
+  data_visualization:"Data Visualization",
   qa_testing: "QA & Testing",
   product_management: "Product Management",
   soft_skills: "Soft Skills",
-  tools: "Product Tools",
+  tools: "Tools",
 };
 
 const keyFeatures = [
@@ -130,7 +140,7 @@ const AboutSection = () => {
           <h2 className="text-4xl font-bold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-[#2cf393] via-[#10d09d] to-[#0ba17a] drop-shadow-sm">
   My Skills
 </h2>
-            <Tabs defaultValue="Development" className="w-full">
+<Tabs defaultValue="product_management" className="w-full">
             <TabsList className="flex flex-wrap gap-2 mb-8 bg-gradient-to-r from-white via-[#e0fff2] to-[#caffea] border border-[#2cf393]/30 rounded-lg p-1 justify-center items-center">
 
                 {Object.keys(skills).map((key) => (

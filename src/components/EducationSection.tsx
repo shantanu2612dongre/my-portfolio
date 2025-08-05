@@ -24,17 +24,24 @@ const certifications = [
     image: "https://plus.unsplash.com/premium_photo-1714138490052-65c64d8db2e0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
+    name: "IBM AI Product Management",
+    issuer: "Coursera",
+    year: "2025",
+    image: "https://plus.unsplash.com/premium_photo-1714138490052-65c64d8db2e0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
+    name: "Google Project Management",
+    issuer: "Coursera",
+    year: "2025",
+    image: "https://plus.unsplash.com/premium_photo-1714138490052-65c64d8db2e0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  },
+  {
     name: "Machine Learning Foundation: Study Approach",
     issuer: "Coursera",
     year: "2020",
     image: "https://plus.unsplash.com/premium_photo-1714138490052-65c64d8db2e0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-  {
-    name: "Python Basics & Data Structures",
-    issuer: "Coursera",
-    year: "2021",
-    image: "https://plus.unsplash.com/premium_photo-1714138490052-65c64d8db2e0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
+  
   {
     name: "Full-stack Developer",
     issuer: "Physics-Wallah",
@@ -47,12 +54,7 @@ const certifications = [
     year: "2024",
     image: "https://plus.unsplash.com/premium_photo-1714138490052-65c64d8db2e0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
-  {
-    name: "Getting started with Python",
-    issuer: "Coursera",
-    year: "2020",
-    image: "https://plus.unsplash.com/premium_photo-1714138490052-65c64d8db2e0?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  },
+  
 ];
 
 const EducationSection = () => {

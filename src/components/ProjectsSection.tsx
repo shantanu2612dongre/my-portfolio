@@ -67,20 +67,19 @@ const projectGroups = {
     },
   ],
 
-  "Full-Stack Apps": [
-    {
-      title: "KitchenCloud",
-      description: "A full-stack cloud kitchen app with cart, filtering, and admin panel. Powered by Django & React.",
-      image: "/projects/kitchencloud.png",
-      link: "https://kitchencloud.live",
-    },
-    {
-      title: "Resume Matcher AI",
-      description: "AI tool that parses resumes & JDs to generate match scores and tailored summaries using OpenAI.",
-      image: "/projects/resumematcher.png",
-      link: "https://resumematche.png",
-    },
-  ],
+  // "Full-Stack Apps": [
+  //   {
+  //     title: "KitchenCloud",
+  //     description: "A full-stack cloud kitchen app with cart, filtering, and admin panel. Powered by Django & React.",
+  //     image: "/projects/kitchencloud.png",
+  //     link: "https://kitchencloud.live",
+  //   },
+    // {
+    //   title: "Resume Matcher AI",
+    //   description: "AI tool that parses resumes & JDs to generate match scores and tailored summaries using OpenAI.",
+    //   image: "/projects/resumematcher.png",
+    //   link: "https://resumematche.png",
+    // },
 };
 
 const ProjectsSection = () => {
