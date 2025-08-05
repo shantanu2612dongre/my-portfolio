@@ -47,7 +47,10 @@ const skills = {
   tools:[
     { name: "Figma / Canva /Whimsical /Taiga (Wireframing)", level: 90 },
     { name: "JIRA / Confluence", level: 93 },
-    { name: "Mixpanel ", level: 93 },
+    { name: "Mixpanel/Miro", level: 97 },
+    { name: "Jenkins/Git ", level: 94 },
+    { name: "Notion/loom ", level: 91 },
+    
   
   ],
 };
