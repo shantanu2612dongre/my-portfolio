@@ -7,7 +7,7 @@ const experiences = [
     company: "Makepositive Software Solutions Ltd",
     duration: "Jan 2022 - Nov 2023",
     description: [
-      " Shipped High-Impact Salesforce Features across Service, Sales, Marketing, and Community Clouds by defining user stories with PMs and ensuring QA alignment, enabling 4 major enterprise go-lives.",
+      " Shipped High-Impact Salesforce Features across Service, Sales, Marketing, and Community Clouds by defining user stories with Project Managers and ensuring QA alignment, enabling 4 major enterprise go-lives.",
 	"Mapped B2B CRM Journeys and designed scalable test cases for workflows like lead conversion, case routing, email automation, and partner onboarding improving coverage across 5+ Salesforce modules.",
 		" Led End-to-End QA Strategy, combining manual and automated tests for Lightning components, validation rules, Flows, Apex triggers, and API integrations , increased release confidence by 35%.",
 		"Reduced Bug Leakage by 40% by implementing a proactive QA loop: pre-UAT functional test cycles, regression sweeps, and stakeholder sign offs before sandbox refreshes.",
