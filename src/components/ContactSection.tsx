@@ -102,7 +102,7 @@ const ContactSection = () => {
   asChild
   className="justify-start border-gray-900 text-gray-900 hover:bg-gray-100 dark:border-white/30 dark:text-white dark:hover:bg-black/30 transition-colors duration-300"
 >
-  <a href="/projects/pdf/SHANTANU_DONGRE_RESUME_PM.pdf" target="_self" rel="noopener noreferrer">
+  <a href="/projects/pdf/SHANTANU_DONGRE_PMRESUME.pdf" target="_self" rel="noopener noreferrer">
     View Resume
   </a>
 </Button>
