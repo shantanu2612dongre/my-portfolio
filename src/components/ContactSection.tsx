@@ -102,14 +102,14 @@ const ContactSection = () => {
   asChild
   className="justify-start border-gray-900 text-gray-900 hover:bg-gray-100 dark:border-white/30 dark:text-white dark:hover:bg-black/30 transition-colors duration-300"
 >
-  <a href="/projects/pdf/SHANTANU_DONGRE_PMRESUME.pdf" target="_self" rel="noopener noreferrer">
+  <a href="/SHANTANU_DONGRE_PMRESUME.pdf" target="_self" rel="noopener noreferrer">
     View Resume
   </a>
 </Button>
 <Button className="bg-black/100 hover:bg-black/30 text-white" asChild>
   <a 
-    href="/projects/pdf/Shantanu_Dongre_PMResume.pdf" 
-    download="Shantanu_Dongre_PMResume.pdf"
+    href="/SHANTANU_DONGRE_PMResume.pdf" 
+    download="SHANTANU_DONGRE_PMResume.pdf"
   >
     <Download className="h-4 w-4 mr-2" />
     Download
