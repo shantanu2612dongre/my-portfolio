@@ -106,12 +106,15 @@ const ContactSection = () => {
     View Resume
   </a>
 </Button>
-            <Button className="bg-black/100 hover:bg-black/30 text-white" asChild>
-              <a href={resumeFile} download="Shantanu_Dongre_PMResume.pdf">
-                <Download className="h-4 w-4 mr-2" />
-                Download
-              </a>
-            </Button>
+<Button className="bg-black/100 hover:bg-black/30 text-white" asChild>
+  <a 
+    href="/projects/pdf/Shantanu_Dongre_PMResume.pdf" 
+    download="Shantanu_Dongre_PMResume.pdf"
+  >
+    <Download className="h-4 w-4 mr-2" />
+    Download
+  </a>
+</Button>
           </div>
         </div>
       </div>
