@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Card, CardContent } from "@/components/ui/card";
 import { useToast } from "@/hooks/use-toast";
 import React, { useState } from "react";
-const resumeFile = "/documents/SHANTANUDONGRE_Resume 2.pdf";
+const resumeFile = "/SHANTANU_DONGRE_PMResume 2.pdf";
 
 const ContactSection = () => {
 
